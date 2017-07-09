@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Strict //EN" "http://ww.w3.org/TR/xhtml-Strict.dtd" />
+
+<!-- 근무 명령 작성 부서에서 사용하는 페이지 입니다. -->
+<!-- 당직 근무 명령을 만드는 페이지 입니다. 이 페이지에서 당직근무 명령을 만들고 이것을 엑셀로 뽑아줘야 합니다. -->
+<html>
+	<head>
+		<title>당직근무 명령</title>
+		<link type="text/css" rel="stylesheet" href="../common.css" />
+		<link type="text/css" rel="stylesheet" href="MakeDuty.css" />
+		<script type="text/javascript" src="../common.js"></script>
+		<script type="text/javascript" src="Model_Ajax.js"></script>
+		<script type="text/javascript" src="MakeDuty.js"></script>
+	</head>
+	<body>
+		<div id="userInfo">
+		</div>
+		<!--MENU------------------------------------------------------------------------------------------->
+		<div id="menu">
+			<table>
+				<tr>
+					<td id="menu1"><a href="../MakeDuty/MakeDuty.html"><img src="../image/tab1_on.png" /></a></td>
+					<td id="menu2"><a href="../AllDuty/AllDuty.html"><img src="../image/tab2_off.png" /></a></td>
+					<td id="menu3"><a href="../EnteranceSystem/EnteranceSystem.html"><img src="../image/tab3_off.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<!--PAGE------------------------------------------------------------------------------------------->
+		<div id="all">
+			<div id="head">
+				<div id="head_in">
+						<input id="workplace" type="text">
+						<div id="select_in_head">
+						</div>
+						<div id="workplaceList">
+						</div>
+						<!--<div id="toExel">
+								<img id="input_excel" type="image" src="../image/buildExcel.png" value="Do you wanna build a excel~" />
+						</div>-->
+						<div id="select_series">
+						</div>
+						<div id="head_setting">
+							<img id="setting" type="image" src="../image/setting.gif" value="setting" />
+							<div id="setting_div">
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<!--근무자 리스트-->
+			<div id="List1">
+				<div id="List1_all">
+					<div class="modify" id="List1_top">
+						<div id="plus_WorkerList"></div>
+						<img id="modify_WorkerList" type="image" src="../image/button_edit.jpg" value="수정" />
+					</div>
+					<div id="List1_colName">
+						<table>
+							<tr>
+								<th class="num">순번</th>
+								<th class="member">소속</th>
+								<th class="rank">계급</th>
+								<th class="name">성명</th>
+								<th class="other">비고</th>
+							</tr>
+						</table>
+					</div>
+					
+					<div id="WorkerList">
+						<!--getWorker.jsp-->
+					</div>
+				</div>
+				<div id="autoComplete">
+					<!--getAutoComplete.jsp-->
+				</div>
+			</div>
+
+			<!--근무 명령-->
+			<div id="List2">
+				<div id="List2_all">
+					<div class="modify" id="List2_top">
+						<div id="plus_DutyList"></div>
+						<img id="modify_DutyList" type="image" src="../image/button_edit.jpg" value="수정" />
+					</div>
+					<div id="List2_colName">
+						<div id="colName_shadow"></div>
+						<table>
+							<tr>
+								<th class ="date" rowspan="2">
+									<select name="date_year" id="date_year">
+										<option value="2015">2015</option>
+										<option value="2016">2016</option>
+										<option value="2017">2017</option>
+										<option value="2018">2018</option>
+									</select>
+									<select name="date_month" id="date_month">
+										<option value="01">1</option>
+										<option value="02">2</option>
+										<option value="03">3</option>
+										<option value="04">4</option>
+										<option value="05">5</option>
+										<option value="06">6</option>
+										<option value="07">7</option>
+										<option value="08">8</option>
+										<option value="09">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</th>
+								<th class="day" rowspan="2">요일</th>
+								<th colspan="2">당직사관</th>
+							</tr>
+							<tr>
+								<th class ="num">순번</th><th class="name">이름</th>
+							</tr>
+						</table>
+					</div>
+					<div id="DutyList">
+						<!--getDuty.jsp-->
+					</div>
+				</div>
+			</div>
+			<div id='shadow'>
+			</div>
+			<div id='modifyShadow'>
+			</div>
+		</div>
+		<!--Bottom------------------------------------------------------------------------------------------->
+		<div id="bottom_info">
+			Copyright ⓒ 제10전투비행단 정보체계운영반. All rights reserved.
+		</div>
+	</body>
+</html>

@@ -1,0 +1,301 @@
+@font-face {
+	font-family: chun;
+	src: url(../human.eot);
+	src: local(¡Ø), url(../human.woff) format("woff");
+}
+div#all #head {
+	padding: 10px;
+	/*border-top: 3px dotted #eee;
+	border-bottom: 3px dotted #eee;*/
+	text-align: center;
+	background: url(../image/banner.gif) no-repeat center;
+	height: 70px;
+}
+div#all #head #select_in_head {
+	font-size: 50px;
+	font-family: chun;
+	color: #555;
+	border: 0px solid black;
+	height: 73px;
+	padding-top: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+div#all #head #workplace {
+	display: none;
+}
+div#all #head #workplaceList {
+	z-index: 10;
+	background-color: #dfc588;
+	position: absolute;
+	top: 80px;
+	left: 350px;
+	opacity: 0.95;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+}
+div#all #head #workplaceList table{
+	border: 0px solid white;
+}
+div#all #head #workplaceList td{
+	border: 0px solid white;
+	width: 120px;
+}
+div#all #head #head_in #select_series {
+	position: absolute;
+	top: 0px;
+	right: 40px;
+}
+div#all #head #head_in #select_series select{
+	background-color: #f5f2ed;
+	color: #555;
+}
+div#all #head #head_in #setting_button {
+	position: relative;
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+div#all #head #head_in #setting_table {
+	margin-left: 30px;
+}
+div#all #head #head_in #setting_table select{
+	font-size: 15px;
+	font-family: ¸¼Àº °íµñ;
+	color: black;
+	border: 0px solid white;
+	background-color: white;
+	height: 22px;
+}
+div#all #head #head_setting #setting_caution {
+	text-align: left;
+	margin-top: 100px;
+	margin-left: 30px;
+}
+div#all #head #head_setting #setting_caution #setting_caution_title {
+	font-size: 25px;
+}
+div#all #head #head_in #select_series select {
+	font-family: yunn, ¸¼Àº °íµñ;
+	font-size: 20px;
+	height: 30px;
+	border: 0px solid black;
+	/*background: url(../image/selected.png) no-repeat left;*/
+}
+div#all #head #setting_div {
+	position: absolute;
+	right: 10px;
+	z-index: 10;
+	overflow: auto;
+}
+div#all #head #toExel {
+	font-size: 18px;
+	position: absolute;
+	top: 60px;
+	right: 10px;
+}
+div#all #head #head_setting {
+	position: absolute;
+	top: 0px;
+	right: 7px;
+}
+
+a {
+	text-decoration: none;
+	border: 0px solid white;
+}
+a:link {
+	color: #aaa;
+	border: 0px solid white;
+}
+a:visited {
+	color: #aaa;
+	border: 0px solid white;
+}
+a:hover {
+	color: gray;
+	/*background: #f88396;*/
+	border: 0px solid white;
+}
+/*****************************List1*/
+div#all #List1 {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+div#all #List1 #List1_all #List1_top #plus_WorkerList {
+	float: right;
+}
+div#all #List1 #List1_all {
+	position: relative;
+	background-color: white;
+	width: 552px;
+}
+div#all #List1 #List1_all #WorkerList{
+	position: relative;
+	height: 716px;
+	overflow: auto;
+	width: 567px;
+}
+div#all #List1 table {
+	border-right: 2px solid white;
+}
+div#all #List1 th, td {
+	border: 2px solid #eee;
+	width: 100px;
+	height: 30px;
+}
+div#all #List1 th {
+	background-color: /*#AEF1E4*/#eee;
+	border: 2px solid white;
+}
+div#all .modify {
+	text-align: right;
+	margin-right: 10px;
+}
+div#all #List1 .num {
+	border-left: 2px solid white;
+	width: 50px;
+}
+div#all #List1 .numTD {
+	background-color: /*#880*/;
+}
+div#all #List1 .member {
+	width: 120px;
+	overflow: hidden;
+}
+div#all #List1 .gunbun {
+	width: 0px;
+	font-size: 0px;
+	border: 0px solid black;
+	padding: 0px;
+}
+div#all #List1 .rank {
+	width: 60px;
+}
+div#all #List1 .name {
+	width: 100px;
+}
+div#all #List1 #List1_colName .other {
+	width: 200px;
+	border-right: 0px solid black;
+}
+div#all #List1 .other {
+	width: 199px;
+	border-right: 0px solid black;
+}
+div#all #List1 #WorkerList input {
+	width: 90px;
+}
+/*****************************List2*/
+div#all #List2 {
+	margin-left: 650px;
+	margin-top: 20px;
+	width: 480px;
+}
+div#all #List2 #List2_all #List2_top #plus_DutyList {
+	float: right;
+}
+div#all #List2 #List2_all{
+	position: relative;
+	background-color: white;
+}
+div#all #List2 .modify{
+	margin-right: 28px;
+}
+
+div#all #List2 th, td {
+	border: 2px solid #eee;
+	width: 110px;
+	height: 30px;
+}
+div#all #List2 th {
+	border: 2px solid white;
+	background-color: /*#AEF1E4*/#eee;
+}
+div#all #List2 th {
+	height: 20px;
+}
+div#all #List2 .date {
+	border-left: 2px solid white;
+	width: 115px;
+}
+div#all #List2 td {
+	height: 40px;
+}
+div#all #List2 #List2_colName select {
+	background-color: #fff;
+	border: 0px solid black;
+	font-size: 13px;
+}
+div#all #List2 #List2_colName #colName_shadow{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 114px;
+	height: 46px;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	background-color: #eee;
+	z-index: -1;
+}
+div#all #List2 #DutyList {
+	overflow: auto;
+	height: 700px;
+}
+div#all #List2 #DutyList .num {
+	border-right: 0px solid black;
+}
+div#all #List2 #DutyList .gunbun {
+	visibility: hidden;
+	width: 0px;
+	font-size: 0px;
+	border: 0px solid black;
+	padding: 0px;
+}
+div#all #List2 #DutyList .name {
+	border-right: 2px solid white;
+}
+div#all #List2 #DutyList input{
+	width: 100px;
+	border: 0px;
+	height: 38px;
+	margin: 0px;
+	font-size: 30px;
+	text-align: center;
+}
+#autoComplete {
+	position: absolute;
+	margin-left: 350px;
+	top: 200px;
+	background-color: #fafafa;
+	height: 600px;
+	overflow: auto;
+	box-shadow: 10px 10px 10px #888;
+}
+#autoComplete td {
+	border-bottom: 2px solid #888;
+	border-right: 2px solid #fafafa;
+}
+div#shadow {
+	background-color: #ccc;
+	width: 1200px;
+	height: 890px;
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+}
+div#modifyShadow {
+	background-color: #ccc;
+	width: 1200px;
+	height: 890px;
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}

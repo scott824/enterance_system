@@ -1,0 +1,131 @@
+@font-face {
+	font-family: chun;
+	src: url(../human.eot);
+	src: local(¡Ø), url(../human.woff) format("woff");
+}
+
+div#all {
+	position: relative;
+}
+div#all #head {
+	padding: 10px;
+	height: 70px;
+	text-align: center;
+	background-Color: ;
+	background: url(../image/banner.gif) no-repeat center;
+}
+div#all #authority {
+	font-size: 50px;
+	font-family: chun;
+	color: #555;
+	padding-top: 10px;
+}
+/**********************************/
+div#all #body {
+	position: relative;
+}
+div#all #body .leftBody {
+	width: 240px;
+	border: 0px solid black;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+div#all img {
+}
+/**********************************/
+div#all #body #calender {
+	height: 240px;
+	border: 1px solid white;
+}
+div#all #body #calender #cal_top #month{
+	font-size: 22px;
+}
+div#all #body #calender #cal_content {
+	font-size: 18px;
+	border: 0px solid #aaa;
+}
+div#all #body #calender #cal_content table {
+	border: 2px solid #999;
+	width: 240px;
+}
+div#all #body #calender #cal_content th, td {
+	border: 1px solid #fff;
+	padding: 2px;
+	font-weight: normal;
+}
+div#all #body #calender #cal_content th{
+	border-bottom: 2px solid #aaa;
+	border-right: 1px solid #eee;
+	background-color: #eee;
+}
+div#all #body #calender #cal_content td{
+	border-bottom: 1px solid #ccc;
+}
+/**********************************/
+div#all #body #workplaceList {
+	height: 480px;
+	margin-top: 30px;
+	overflow: auto;
+	font-size: 20px;
+}
+div#all #body #workplaceList:hover {
+	/*overflow-y: scroll;*/
+}
+div#all #body #workplaceList table {
+	font-size: 31px;
+	color: #666;
+	text-align: left;
+	width: 220px;
+}
+div#all #body #workplaceList table td{
+	border-bottom: 1px solid #eee;
+}
+/**********************************/
+div#all #body #display {
+	float: right;
+	width: 780px;
+	height: 700px;
+	border: 2px solid white;
+	margin-right: 40px;
+	margin-top: 30px;
+	overflow: auto;
+}
+div#all #body #display td {
+	border: 2px solid #ddd;
+}
+div#all #body #display .workplace {
+	width: 110px;
+	border-left: 2px solid white;
+}
+div#all #body #display .worker {
+	width: 95px;
+}
+div#all #body #display .sosok, .equal {
+	width: 180px;
+}
+div#all #body #display .sosok {
+	background-color: #eed;
+	height: 25px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+}
+div#all #body #display .equal {
+	height: 25px;
+	overflow: hidden;
+	padding: 0px;
+	height: 27px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid #ddd;
+}
+/**********************************/
+div#all #body #shadow {
+	background-color: #ccc;
+	background: url(../image/loading_s.png) no-repeat center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1200px;
+	height: 742px;
+	opacity: 0.6;
+	z-index: -1;
+}

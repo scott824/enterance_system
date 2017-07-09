@@ -1,0 +1,48 @@
+<jsp:useBean id="UserInfoBean" class="mil.af.alw10.application.user.UserInfoBean" scope="session" />
+<%@ page import="enterance.Log" %>
+<%
+	// sso 세션에서 가져온 변수들
+	String userid = UserInfoBean.getUserid();
+	String name = UserInfoBean.getName();
+	String rankname = UserInfoBean.getRankname();
+	String rankcode = UserInfoBean.getRankcode();
+	String sosokcode = UserInfoBean.getSosokcode();
+	String clientIP = request.getRemoteAddr();
+
+	Log log = new Log(userid, name, rankname, rankcode, sosokcode, clientIP);
+
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	Connection connection = null;
+
+	int certOrder = 0;
+	int certChecker = 0;
+	
+	try {
+		connection = JDBCHelper.getConnection(JDBCHelper.A1);
+
+		preparedStatement = connection.prepareStatement("select count(*) from enterance_certorder where workplacecode = 'ADMIN' and per_code = '" + sosokcode + "' ");
+		resultSet = preparedStatement.executeQuery();
+		while(resultSet.next()) {
+			certOrder = resultSet.getInt(1);
+		}
+		if(resultSet!=null) resultSet.close();
+		if(preparedStatement!=null) preparedStatement.close();
+
+		preparedStatement = connection.prepareStatement("select count(*) from enterance_certchecker where sosokcode = 'ADMIN' and per_code = '" + sosokcode + "' ");
+		resultSet = preparedStatement.executeQuery();
+		while(resultSet.next()) {
+			certChecker = resultSet.getInt(1);
+		}
+		if(resultSet!=null) resultSet.close();
+		if(preparedStatement!=null) preparedStatement.close();
+	}
+	catch(Exception e) {
+		out.println("error\n" + e);
+	}
+	finally {
+		if(resultSet!=null) resultSet.close();
+		if(preparedStatement!=null) preparedStatement.close();
+		if(connection!=null) connection.close();
+	}
+%>

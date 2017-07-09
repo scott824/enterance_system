@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Strict //EN" "http://ww.w3.org/TR/xhtml-Strict.dtd" />
+
+<html>
+	<head>
+		<title>관리자 페이지</title>
+		<link type="text/css" rel="stylesheet" href="../common.css" />
+		<link type="text/css" rel="stylesheet" href="AdminPage.css" />
+		<script type="text/javascript" src="../common.js"></script>
+		<script type="text/javascript" src="view.js"></script>
+		<script type="text/javascript" src="model.js"></script>
+		<script type="text/javascript" src="orderProcedure.js"></script>
+		<script type="text/javascript" src="control.js"></script>
+	</head>
+	<body>
+		<div id="userInfo">
+		</div>
+		<!--MENU------------------------------------------------------------------------------------------->
+		<div id="menu">
+			<table>
+				<tr>
+					<td id="menu1"><a href="../MakeDuty/MakeDuty.html"><img src="../image/tab1_off.png" /></a></td>
+					<td id="menu2"><a href="../AllDuty/AllDuty.html"><img src="../image/tab2_off.png" /></a></td>
+					<td id="menu3"><a href="../EnteranceSystem/EnteranceSystem.html"><img src="../image/tab3_off.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<!--PAGE------------------------------------------------------------------------------------------->
+		<div id="all">
+			<div id="head">
+				관리자 페이지
+				<div id="head_buttonBox">
+					<img id="head_addAdmin" class="add_button" type="image" src="../image/addManager.png" value="+" />
+					<img id="head_addSeries" class="add_button" type="image" src="../image/addWorktype.png" value="+" />
+				</div>
+			</div>
+			<div id="content">
+				<div id="left" class="list">
+					<div id="left_head" class="tablehead left_div">
+						<span>당직근무명령 권한</span>
+						<div class="button_box">
+							<img id="left_add" class="add_button" type="image" src="../image/button_add.png" value="+" />
+							<img id="left_modify" class="modify_button" type="image" src="../image/button_edit.jpg" value="수정" />
+							<img id="left_cancel" class="cancel_button" type="image" src="../image/button_cancel.jpg" value="취소" />
+						</div>
+					</div>
+					<div id="left_body" class="tablebody left_div"></div>
+				</div>
+				<div id="mid" class="list">
+					<div id="mid_head" class="tablehead mid_div">
+						<span>근무지 - 소속</span>
+						<div class="button_box">
+							<!--<img id="mid_add" class="add_button" type="image" src="../image/button_add.png" value="+" />-->
+							<img id="mid_modify" class="modify_button" type="image" src="../image/button_edit.jpg" value="수정" />
+							<img id="mid_cancel" class="cancel_button" type="image" src="../image/button_cancel.jpg" value="취소" />
+						</div>
+					</div>
+					<div id="mid_body" class="tablebody mid_div"></div>
+				</div>
+				<div id="right" class="list">
+					<div id="right_head" class="tablehead right_div">
+						<span>출입통제시스템 권한</span>
+						<div class="button_box">
+							<img id="right_add" class="add_button" type="image" src="../image/button_add.png" value="+" />
+							<img id="right_modify" class="modify_button" type="image" src="../image/button_edit.jpg" value="수정" />
+							<img id="right_cancel" class="cancel_button" type="image" src="../image/button_cancel.jpg" value="취소" />
+						</div>
+					</div>
+					<div id="right_body" class="tablebody right_div"></div>
+				</div>
+				<div id="autocomplete">
+				</div>
+			</div>
+			<div id="shadow">
+			</div>
+		</div>
+		<div id="extra_window">
+			<div id="extra_content">
+				<div id="extra_subject">
+				</div>
+				<div id="extra_close">
+					<img id="close" class="close_button" type="image" src="../image/button_x.png" value="닫기" />
+				</div>
+				<div id="extra_input">
+				</div>
+				<div id="extra_buttonBox">
+					<div id="extra_help">
+					</div>
+					<img id="extra_cancel" class="cancel_button" type="image" src="../image/button_cancel.jpg" value="취소" />
+					<img id="extra_modify" class="modify_button" type="image" src="../image/button_edit.jpg" value="수정" />
+				</div>
+				<div id="extra_list">
+				</div>
+				<div id="extra_tooltip">
+				</div>
+			</div>
+		</div>
+		<div id="shadowAll">
+		</div>
+		<!--Bottom------------------------------------------------------------------------------------------->
+		<div id="bottom_info">
+			Copyright ⓒ 제10전투비행단 정보체계운영반. All rights reserved.
+		</div>
+		<div id="log"></div>
+	</body>
+</html>

@@ -1,0 +1,301 @@
+@font-face {
+	font-family: chun;
+	src: url(../human.eot);
+	src: local(¡Ø), url(../human.woff) format("woff");
+}
+div#all #head {
+	padding: 10px;
+	text-align: center;
+	background: url(../image/banner.gif) no-repeat center;
+	height: 70px;
+	font-family: chun;
+	font-size: 53px;
+	color: #555;
+	cursor: default;
+}
+div#all #head #head_buttonBox{
+	position: absolute;
+	top: -5px;
+	right: 0px;
+	padding: 10px;
+	text-align: right;
+	height: 50px;
+	font-family: ¸¼Àº °íµñ;
+	font-size: 23px;
+	color: #555;
+}
+div#all #head #head_buttonBox img{
+	margin: 5px;
+	display: block;
+	cursor: pointer;
+}
+div#content {
+	position: relative;
+	width: 1200px;
+	height: 830px;
+	background-color: #fff;
+	margin-top: 0px;
+}
+div#content .list {
+	float: left;
+	margin-left: 23px;
+	margin-top: 20px;
+	height: 760px;
+}
+div#content span {
+	/*cursor: auto;*/
+}
+div#content #left {
+	width: 330px;
+}
+div#content #mid {
+	width: 450px;
+}
+div#content #right {
+	float: right;
+	width: 330px;
+	margin-right: 20px;
+}
+div#shadow {
+	background-color: #ccc;
+	width: 1200px;
+	height: 890px;
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+div#content .tablehead {
+	height: 40px;
+	margin: 0px;
+	text-align: left;
+	position: relative;
+}
+div#content .tablehead span{
+	font-size: 20px;
+}
+div#content .tablebody {
+	overflow: auto;
+	height: 760px;
+	margin: 0px;
+}
+div#content .tablebody img{
+	display: none;
+}
+div#content #left .left_div {
+	width: 330px;
+}
+div#content #mid .mid_div {
+	width: 450px;
+}
+div#content #right .right_div {
+	width: 330px;
+}
+div#content #left table {
+	width: 310px;
+}
+div#content #mid table {
+	width: 430px;
+}
+div#content #right table {
+	width: 310px;
+}
+div#content #left .left_tds {
+	width: 145px;
+}
+div#content #right .left_tds {
+	width: 145px;
+}
+div#content input {
+	width: 100px;
+	margin: 0px;
+	padding: 0px;
+}
+div#content tr {
+	border: 2px solid #bbb;
+	height: 33px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+div#content td {
+	border: 1px solid #eee;
+	padding: 7px;
+}
+div#content #mid td {
+	padding: 10px;
+}
+div#content .tablehead .button_box{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	height: 30px;
+	background-color: ;
+}
+div#autocomplete{
+	position: absolute;
+	background-color: #f1f1f1;
+	overflow: auto;
+	max-height: 600px;
+	box-shadow: 0px 0px 15px #000;
+	border: 0px solid #fff;
+	width: 450px;
+	z-index: 10;
+	/*zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color=#eee, Strength=5, Direction=0);
+			/*progid:DXImageTransform.Microsoft.Shadow(Color=#aaa, Strength=5, Direction=90),*/
+			/*progid:DXImageTransform.Microsoft.Shadow(Color=#aaa, Strength=5, Direction=180),*/
+			/*progid:DXImageTransform.Microsoft.Shadow(Color=#aaa, Strength=5, Direction=270);*/
+}
+div#extra_autocomplete {
+	z-index: 4;
+}
+div#autocomplete td, div#extra_window #extra_content #extra_autocomplete td {
+	border-bottom: 2px solid #888;
+	border-right: 2px solid #f1f1f1;
+	width: 110px;
+	height: 30px;
+	padding: 0px;
+}
+div#content .cancel_button {
+	display: none;
+}
+div#content .add_button {
+	display: none;
+}
+div#content .button_box {
+	padding-top: 5px;
+}
+
+div#extra_window {
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	width: 100%;
+	height: 1030px;
+	z-index: 5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	/*opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";*/
+}
+div#extra_window #extra_content {
+	position: relative;
+	background-color: #fff;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	margin-top: 200px;
+	border: 2px solid #bbb;
+}
+div#extra_window #extra_content #extra_input {
+	text-align: left;
+	position: absolute;
+	top: 60px;
+	left: 150px;
+	width: 300px;
+	height: 73px;
+	border: 2px solid #fff;
+	border-top: 2px solid #bbb;
+	border-bottom: 2px solid #bbb;
+	padding: 5px;
+}
+div#extra_window #extra_content #extra_input div{
+	display: inline;
+	position: relative;
+	margin: 15px;
+}
+div#extra_window #extra_content #extra_input img{
+	position: absolute;
+}
+div#extra_window #extra_content #extra_input input{
+	height: 20px;
+	font-size: 15px;
+	margin: 5px;
+}
+div#extra_window #extra_content #extra_buttonBox {
+	position: absolute;
+	border: 0px solid #fff;
+	width: 500px;
+	height: 30px;
+	top: 167px;
+	left: 50px;
+	z-index: 9;
+}
+div#extra_window #extra_content #extra_buttonBox img{
+	float: right;
+}
+div#extra_window #extra_content #extra_buttonBox #extra_help{
+	width: 70px;
+	height: 30px;
+	float: left;
+	background: url("../image/help.gif") no-repeat center;
+	cursor: pointer;
+}
+div#extra_window #extra_content #extra_buttonBox #extra_cancel{
+	display: none;
+}
+div#extra_window #extra_content #extra_list {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	width: 500px;
+	height: 360px;
+	overflow: auto;
+	border: 2px solid #fff;
+	border-top: 2px solid #bbb;
+	border-bottom: 2px solid #bbb;
+}
+div#extra_window #extra_content #extra_list .del{
+	float: right;
+	display: none;
+}
+div#extra_window #extra_content td {
+	border-bottom: 2px solid #eee;
+	border-right: 1px solid #f1f1f1;
+	width: 230px;
+	height: 40px;
+	padding: 0px;
+}
+div#extra_window #extra_content #extra_input #extra_addition {
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+div#extra_window #extra_content #extra_subject {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 20px;
+}
+div#extra_window #extra_content #extra_close {
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	cursor: pointer;
+}
+div#extra_window #extra_content #extra_tooltip {
+	position: absolute;
+	top: -100px;
+	left: -150px;
+	width: 900px;
+	height: 700px;
+	display: none;
+	z-index: 8;
+}
+div#shadowAll {
+	background-color: #888;
+	width: 100%;
+	height: 1030px;
+	z-index: 3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.6;
+	display: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
